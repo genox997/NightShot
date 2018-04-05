@@ -1,0 +1,3 @@
+/home/claudio/Android/Android Studio Project/NightShot/app/.externalNativeBuild/cmake/release/arm64-v8a/CMakeFiles/rebuild_cache.dir
+/home/claudio/Android/Android Studio Project/NightShot/app/.externalNativeBuild/cmake/release/arm64-v8a/CMakeFiles/edit_cache.dir
+/home/claudio/Android/Android Studio Project/NightShot/app/.externalNativeBuild/cmake/release/arm64-v8a/CMakeFiles/native-lib.dir

@@ -1,0 +1,31 @@
+
+{
+	"buildFiles" : 
+	[
+		"/home/claudio/Android/Android Studio Project/NightShot/app/CMakeLists.txt"
+	],
+	"cleanCommands" : 
+	[
+		"/home/claudio/Android/Sdk/cmake/3.6.4111459/bin/cmake --build /home/claudio/Android/Android\\ Studio\\ Project/NightShot/app/.externalNativeBuild/cmake/debug/mips --target clean"
+	],
+	"libraries" : 
+	{
+		"native-lib-Debug-mips" : 
+		{
+			"abi" : "mips",
+			"artifactName" : "native-lib",
+			"buildCommand" : "/home/claudio/Android/Sdk/cmake/3.6.4111459/bin/cmake --build /home/claudio/Android/Android\\ Studio\\ Project/NightShot/app/.externalNativeBuild/cmake/debug/mips --target native-lib",
+			"buildType" : "debug",
+			"output" : "/home/claudio/Android/Android Studio Project/NightShot/app/build/intermediates/cmake/debug/obj/mips/libnative-lib.so",
+			"toolchain" : "14710541364436901947"
+		}
+	},
+	"toolchains" : 
+	{
+		"14710541364436901947" : 
+		{
+			"cCompilerExecutable" : "/home/claudio/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/bin/clang",
+			"cppCompilerExecutable" : "/home/claudio/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++"
+		}
+	}
+}
