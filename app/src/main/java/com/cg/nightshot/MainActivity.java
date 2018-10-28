@@ -206,7 +206,7 @@ File dir = new File(Environment.getExternalStorageDirectory().getAbsolutePath() 
                 Log.d("n:",Integer.toString(Numeroimg));
             }
         }
-        new AveragingTask(Numeroimg, mArrayUri).execute();
+        new AveragingTask().execute();
     }
 
 
@@ -218,25 +218,15 @@ File dir = new File(Environment.getExternalStorageDirectory().getAbsolutePath() 
     private class AveragingTask extends AsyncTask<String, Integer, Bitmap> {
         int N;
         ArrayList<Uri> ListaUri;
-       // ProgressDialog progressDialog;
 
-        AveragingTask(int N, ArrayList<Uri> ListaUri) {
+        AveragingTask() {
             this.N = Numeroimg;
             this.ListaUri = mArrayUri;
         }
 
         @Override
         protected void onPreExecute() {
-        /*    progressDialog=new ProgressDialog(MainActivity.this);
-            progressDialog.setIndeterminate(false);
-            progressDialog.setMax(100);
-            progressDialog.setProgress(0);
-            progressDialog.setProgressStyle(ProgressDialog.STYLE_HORIZONTAL);
-            progressDialog.setTitle("Operazione in corso");
-            progressDialog.setCancelable(false);
-            progressDialog.show();*/
 
-            //
 
             mBuilder.setProgress(100, 0, false);
             mBuilder.setContentTitle("Night Shot");
@@ -271,17 +261,9 @@ File dir = new File(Environment.getExternalStorageDirectory().getAbsolutePath() 
 
                 CornersprimaBitmap=Alignment.TrackFeatures(primo);//traccia le features nella prima immagine;
 
-
-
-
-                Paint paint=new Paint();
-                paint.setARGB(100,0,255,0);
-
-
                 Mat matRisultato = new Mat(primo.getHeight(), primo.getWidth(), CvType. CV_64FC3);
-                //Mat matf= new Mat(primo.getHeight(), primo.getWidth(), CvType. CV_64FC3);
 
-                Utils.bitmapToMat(primo,matRisultato);  //cambia con "primo"!!!!!!!!!!!!
+                Utils.bitmapToMat(primo,matRisultato);
                 for (int i = 1; i < N; i++) {                                                                    //ciclo con sovrapposizione delle immagini corrette
                     p=(int)((100/(double)N)*((double)i));
                    // progressDialog.setProgress(p);
@@ -289,12 +271,11 @@ File dir = new File(Environment.getExternalStorageDirectory().getAbsolutePath() 
                     publishProgress(p);
                     alpha=1-(1/((double)i+1.0));
                     beta=1-alpha;
-
                     Core.addWeighted(matRisultato,alpha,Alignment.alignImages(primo,MediaStore.Images.Media.getBitmap(context.getContentResolver(), ListaUri.get(i)),CornersprimaBitmap),beta,0.0,matRisultato);
                 }
-                //Core.divide((1/N),matRisultato,matRisultato);
-                //Imgproc.cvtColor(matRisultato, matRisultato,CV_8U);
                 Utils.matToBitmap(matRisultato,finale);
+                Utility.changeBitmapContrastBrightness(finale,1.13f);
+
 
                 System.gc();
                 mArrayUri=null;
@@ -303,8 +284,7 @@ File dir = new File(Environment.getExternalStorageDirectory().getAbsolutePath() 
                     for (int i = 0; i < children.length; i++) {
                         new File(dir, children[i]).delete();
                     }
-                    // progressDialog.setProgress(100);
-                    //publishProgress(100);
+
 
                 }
                 return finale;
@@ -362,8 +342,8 @@ File dir = new File(Environment.getExternalStorageDirectory().getAbsolutePath() 
 
                     out.flush();
                     out.close();
-                    finale=null;
-                    System.gc();
+                    finale.recycle();
+                            System.gc();
                 } catch (Exception e) {
 
                     e.printStackTrace();

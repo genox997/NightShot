@@ -4,7 +4,7 @@
             "outputFile": "/home/claudio/Android/Android Studio Project/NightShot/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v22/values-v22.xml",
             "map": [
                 {
-                    "source": "/home/claudio/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.3.1.aar/8b4a8964feaf43e9b23d2b2daa2d0336/res/values-v22/values-v22.xml",
+                    "source": "/home/claudio/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.3.1.aar/fb0b90c9261b97a6cd10c801c1c5b4e0/res/values-v22/values-v22.xml",
                     "from": {
                         "startLines": "2,3,4,9",
                         "startColumns": "4,4,4,4",

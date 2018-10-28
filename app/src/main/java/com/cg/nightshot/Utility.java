@@ -1,7 +1,11 @@
 package com.cg.nightshot;
 
 import android.app.Application;
+import android.graphics.Canvas;
 import android.graphics.Color;
+import android.graphics.ColorMatrix;
+import android.graphics.ColorMatrixColorFilter;
+import android.graphics.Paint;
 import android.hardware.camera2.CameraCharacteristics;
 import android.net.Uri;
 import android.os.Environment;
@@ -48,15 +52,29 @@ public class Utility {
 
         fileOrDirectory.delete();
     }
-public static int nextpoweroftwo(int value){
 
-    int highestOneBit = Integer.highestOneBit(value);
-    if (value == highestOneBit) {
-        return value;
+
+    public static Bitmap changeBitmapContrastBrightness(Bitmap bmp, float contrast)
+    {
+        //contrast from 0 to 10, 1 is default
+        ColorMatrix cm = new ColorMatrix(new float[]
+                {
+                        contrast, 0, 0, 0, 1,
+                        0, contrast, 0, 0, 1,
+                        0, 0, contrast, 0, 1,
+                        0, 0, 0, 1, 0
+                });
+
+
+
+        Canvas canvas = new Canvas(bmp);
+
+        Paint paint = new Paint();
+        paint.setColorFilter(new ColorMatrixColorFilter(cm));
+        canvas.drawBitmap(bmp, 0, 0, paint);
+
+        return bmp;
     }
-    return highestOneBit << 1;
-
-}
 
 }
 

@@ -5,6 +5,7 @@ import android.graphics.BitmapFactory;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Environment;
+import android.support.v4.content.FileProvider;
 import android.support.v4.view.MotionEventCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
@@ -37,7 +38,7 @@ public class Risultato extends AppCompatActivity {
         String fname = intent.getStringExtra("fname");
         Integer height = Integer.parseInt(intent.getStringExtra("height"));
         Integer width = Integer.parseInt(intent.getStringExtra("width"));
-
+        Log.d("PATH", Environment.getExternalStorageDirectory().toString());
         String sdcardPath = Environment.getExternalStorageDirectory().toString();
         path=sdcardPath+ "/DCIM/NightShot/"+fname;
 
@@ -57,7 +58,7 @@ public class Risultato extends AppCompatActivity {
         File filedel = new File(path);
         boolean deleted = filedel.delete();
         if (deleted){
-            sendBroadcast(new Intent(Intent.ACTION_MEDIA_SCANNER_SCAN_FILE, Uri.fromFile(filedel)));
+            sendBroadcast(new Intent(Intent.ACTION_MEDIA_SCANNER_SCAN_FILE, FileProvider.getUriForFile(this,"com.cg.nightshot.fileprovider",filedel)));
 
 
         finish();}
@@ -65,7 +66,7 @@ public class Risultato extends AppCompatActivity {
 
     public void FAB(View v)
     {
-        Uri bmpUri = Uri.fromFile(new File(path));
+        Uri bmpUri = FileProvider.getUriForFile(this,"com.cg.nightshot.fileprovider",new File(path));
         Intent shareIntent = new Intent(Intent.ACTION_SEND);
         shareIntent.setType("image/*");
         shareIntent.putExtra(Intent.EXTRA_STREAM, bmpUri);

@@ -4,7 +4,7 @@
             "outputFile": "/home/claudio/Android/Android Studio Project/NightShot/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-mk-rMK/values-mk-rMK.xml",
             "map": [
                 {
-                    "source": "/home/claudio/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.3.1.aar/8b4a8964feaf43e9b23d2b2daa2d0336/res/values-mk-rMK/values-mk-rMK.xml",
+                    "source": "/home/claudio/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.3.1.aar/fb0b90c9261b97a6cd10c801c1c5b4e0/res/values-mk-rMK/values-mk-rMK.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",

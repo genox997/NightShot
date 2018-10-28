@@ -4,17 +4,7 @@
             "outputFile": "/home/claudio/Android/Android Studio Project/NightShot/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-land/values-land.xml",
             "map": [
                 {
-                    "source": "/home/claudio/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.3.1.aar/8b4a8964feaf43e9b23d2b2daa2d0336/res/values-land/values-land.xml",
-                    "from": {
-                        "startLines": "2,3,4,5",
-                        "startColumns": "4,4,4,4",
-                        "startOffsets": "55,125,189,260",
-                        "endColumns": "69,63,70,67",
-                        "endOffsets": "120,184,255,323"
-                    }
-                },
-                {
-                    "source": "/home/claudio/.gradle/caches/transforms-1/files-1.1/design-25.3.1.aar/cd2a95d263cc45eaf4e3f4312136f467/res/values-land/values-land.xml",
+                    "source": "/home/claudio/.gradle/caches/transforms-1/files-1.1/design-25.3.1.aar/811daffe4e30fdf992e80f51b557899b/res/values-land/values-land.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -30,6 +20,16 @@
                         "endLines": "9",
                         "endColumns": "12",
                         "endOffsets": "505"
+                    }
+                },
+                {
+                    "source": "/home/claudio/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.3.1.aar/fb0b90c9261b97a6cd10c801c1c5b4e0/res/values-land/values-land.xml",
+                    "from": {
+                        "startLines": "2,3,4,5",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,125,189,260",
+                        "endColumns": "69,63,70,67",
+                        "endOffsets": "120,184,255,323"
                     }
                 }
             ]

@@ -83,12 +83,13 @@ import java.util.List;
 import java.util.concurrent.Semaphore;
 import java.util.concurrent.TimeUnit;
 
+import static android.hardware.camera2.CameraDevice.TEMPLATE_ZERO_SHUTTER_LAG;
 import static android.icu.lang.UCharacter.GraphemeClusterBreak.L;
 import static com.cg.nightshot.R.id.Focusbutton;
 import static com.cg.nightshot.R.id.ISObutton;
 import static com.cg.nightshot.R.id.Shotsbutton;
 import static com.cg.nightshot.R.id.Shutterbutton;
-import static com.cg.nightshot.R.id.picture;
+import static com.cg.nightshot.R.id.picturebutton;
 import static java.lang.Math.abs;
 
 public class Camera2BasicFragment extends Fragment
@@ -505,7 +506,7 @@ public class Camera2BasicFragment extends Fragment
 
     @Override
     public void onViewCreated(final View view, Bundle savedInstanceState) {
-        view.findViewById(picture).setOnClickListener(this);
+        view.findViewById(picturebutton).setOnClickListener(this);
 
                 mTextureView = (AutoFitTextureView) view.findViewById(R.id.texture);
     }
@@ -574,7 +575,7 @@ public class Camera2BasicFragment extends Fragment
             for (String cameraId : manager.getCameraIdList()) {
                  characteristics = manager.getCameraCharacteristics(cameraId);
 
-                // We don't use a front facing camera in this sample.
+                // We don't use a front facing camera
                 Integer facing = characteristics.get(CameraCharacteristics.LENS_FACING);
                 if (facing != null && facing == CameraCharacteristics.LENS_FACING_FRONT) {
                     continue;
@@ -598,7 +599,7 @@ public class Camera2BasicFragment extends Fragment
                         Arrays.asList(map.getOutputSizes(ImageFormat.JPEG)),
                         new CompareSizesByArea());
                 mImageReader = ImageReader.newInstance(largest.getWidth(), largest.getHeight(),
-                        ImageFormat.JPEG, /*maxImages*/11);
+                        ImageFormat.JPEG, /*maxImages*/20);
                 mImageReader.setOnImageAvailableListener(
                         mOnImageAvailableListener, mBackgroundHandler);
 
@@ -771,7 +772,7 @@ public class Camera2BasicFragment extends Fragment
 
             // We set up a CaptureRequest.Builder with the output Surface.
             mPreviewRequestBuilder
-                    = mCameraDevice.createCaptureRequest(CameraDevice.TEMPLATE_PREVIEW);
+                    = mCameraDevice.createCaptureRequest(CameraDevice.TEMPLATE_ZERO_SHUTTER_LAG);
             mPreviewRequestBuilder.addTarget(surface);
             // Here, we create a CameraCaptureSession for camera preview.
             mCameraDevice.createCaptureSession(Arrays.asList(surface, mImageReader.getSurface()),
@@ -987,12 +988,11 @@ public class Camera2BasicFragment extends Fragment
         Context context= this.getActivity();
 
         switch (view.getId()) {
-            case picture: {
+            case picturebutton: {
                 takePicture();
                 Animation shake = AnimationUtils.loadAnimation(context, R.anim.shake);
                 view.startAnimation(shake);
                 mPictureCounter=0;
-
                 Numberview.setVisibility(View.VISIBLE);
 
                 break;
@@ -1300,8 +1300,13 @@ public class Camera2BasicFragment extends Fragment
                     temp=(Button)view.findViewById(id_);
                     temp.setTextColor(getResources().getColor(R.color.colorPrimary));
                     ISO=Integer.parseInt(temp.getText().toString());
-                   // mPreviewRequest = mPreviewRequestBuilder.build();
+                    Log.d("ISO",ISO.toString());
+                    Log.d("Exposure",Exposure.toString());
+                    Log.d("Focus",Focus.toString());
+
+                    // mPreviewRequest = mPreviewRequestBuilder.build();
                    // createCameraPreviewSession();
+
                     mPreviewRequestBuilder.set(CaptureRequest.CONTROL_AE_MODE, CaptureRequest.CONTROL_AE_MODE_OFF);
                     mPreviewRequestBuilder.set(CaptureRequest.SENSOR_SENSITIVITY,ISO);
                     mPreviewRequestBuilder.set(CaptureRequest.SENSOR_EXPOSURE_TIME,Exposure);
@@ -1419,9 +1424,13 @@ public class Camera2BasicFragment extends Fragment
                     mPreviewRequestBuilder.set(CaptureRequest.CONTROL_AE_MODE, CaptureRequest.CONTROL_AE_MODE_OFF);
                     mPreviewRequestBuilder.set(CaptureRequest.SENSOR_EXPOSURE_TIME,Exposure);
                     mPreviewRequestBuilder.set(CaptureRequest.SENSOR_SENSITIVITY,ISO);
+                    mPreviewRequestBuilder.set(CaptureRequest.LENS_FOCUS_DISTANCE,Focus);
+
                     mPreviewRequestBuilder.set(CaptureRequest.SENSOR_FRAME_DURATION, 0L);
                     mPreviewRequestBuilder.set(CaptureRequest.HOT_PIXEL_MODE,CaptureRequest.HOT_PIXEL_MODE_HIGH_QUALITY);
-
+                    Log.d("ISO",ISO.toString());
+                    Log.d("Exposure",Exposure.toString());
+                    Log.d("Focus",Focus.toString());
 
                     //mPreviewRequest = mPreviewRequestBuilder.build();
                     //createCameraPreviewSession();
@@ -1446,8 +1455,8 @@ public class Camera2BasicFragment extends Fragment
             //Log.d("DEBUG", "Progress is: "+maxLens);
             //set textView's text
 
-            float num = (abs((float)progress-100) * minimumLens / 100);
-            mPreviewRequestBuilder.set(CaptureRequest.LENS_FOCUS_DISTANCE, num);
+             Focus = (abs((float)progress-100) * minimumLens / 100);
+            mPreviewRequestBuilder.set(CaptureRequest.LENS_FOCUS_DISTANCE,Focus);
             try{ mCaptureSession.setRepeatingRequest(mPreviewRequestBuilder.build(), mCaptureCallback,
                     mBackgroundHandler);
         } catch (CameraAccessException e) {
