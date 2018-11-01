@@ -1,14 +1,11 @@
 package com.cg.nightshot;
 import android.app.ActionBar;
 import android.app.DialogFragment;
-import android.graphics.Canvas;
 import android.graphics.Color;
-import android.graphics.Paint;
 import android.media.ExifInterface;
 import android.os.Bundle;
 import android.Manifest;
 import android.app.NotificationManager;
-import android.app.ProgressDialog;
 import android.content.ClipData;
 import android.content.Context;
 import android.content.Intent;
@@ -29,7 +26,6 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.Window;
-import android.widget.LinearLayout;
 import android.widget.Toast;
 import java.io.File;
 import java.io.FileOutputStream;
@@ -48,22 +44,13 @@ import org.opencv.core.Core;
 import org.opencv.core.CvType;
 import org.opencv.core.Mat;
 import org.opencv.core.MatOfPoint;
-import org.opencv.core.Point;
 
 
 import android.content.Context;
-import android.graphics.ImageFormat;
-import android.graphics.SurfaceTexture;
-import android.hardware.camera2.CameraCaptureSession;
 import android.hardware.camera2.CameraCharacteristics;
-import android.hardware.camera2.CameraDevice;
-import android.hardware.camera2.CameraManager;
 import android.hardware.camera2.CameraMetadata;
-import android.hardware.camera2.CaptureRequest;
-import android.hardware.camera2.TotalCaptureResult;
 import android.hardware.camera2.params.StreamConfigurationMap;
 import android.media.Image;
-import android.media.ImageReader;
 import android.os.Environment;
 import android.os.Handler;
 import android.os.HandlerThread;
@@ -73,8 +60,6 @@ import android.util.Log;
 import android.util.Size;
 import android.util.SparseIntArray;
 import android.view.Menu;
-import android.view.MenuItem;
-import android.view.Surface;
 import android.view.TextureView;
 import android.view.View;
 import android.widget.Button;
@@ -86,12 +71,9 @@ import java.io.File;
 import java.io.FileOutputStream;
 import java.io.OutputStream;
 import java.nio.ByteBuffer;
-import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Calendar;
-import java.util.Date;
 import java.util.List;
 import java.util.logging.LogRecord;
 
@@ -100,7 +82,6 @@ import java.util.logging.LogRecord;
 public class MainActivity extends AppCompatActivity {
 File dir = new File(Environment.getExternalStorageDirectory().getAbsolutePath() + "/DCIM/NightShot/temp/");
     int o=deleteRecursive(dir);
-    private static int FILE_SELECT_CODE = 1;
     List<String> imagesEncodedList;
     ArrayList<Uri> mArrayUri;
     int Numeroimg=0;                                        //numero di immagini caricate
@@ -393,7 +374,7 @@ File dir = new File(Environment.getExternalStorageDirectory().getAbsolutePath() 
 
                     } else {
 
-                        // permission negato
+                        // permesso negato
                     }
                     return;
                 }
@@ -404,6 +385,11 @@ File dir = new File(Environment.getExternalStorageDirectory().getAbsolutePath() 
         View decorView = getWindow().getDecorView();
         int uiOptions = View.SYSTEM_UI_FLAG_FULLSCREEN;
         decorView.setSystemUiVisibility(uiOptions);
+        Log.i("OpenCV", "Trying to load OpenCV library");
+        if (!OpenCVLoader.initAsync(OpenCVLoader.OPENCV_VERSION_2_4_6, this, mLoaderCallback))
+        {
+            Log.e("OpenCV", "Cannot connect to OpenCV Manager");
+        }
     }
     public int deleteRecursive(File fileOrDirectory) {
 

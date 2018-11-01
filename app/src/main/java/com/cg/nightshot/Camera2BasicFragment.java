@@ -83,8 +83,6 @@ import java.util.List;
 import java.util.concurrent.Semaphore;
 import java.util.concurrent.TimeUnit;
 
-import static android.hardware.camera2.CameraDevice.TEMPLATE_ZERO_SHUTTER_LAG;
-import static android.icu.lang.UCharacter.GraphemeClusterBreak.L;
 import static com.cg.nightshot.R.id.Focusbutton;
 import static com.cg.nightshot.R.id.ISObutton;
 import static com.cg.nightshot.R.id.Shotsbutton;
@@ -298,7 +296,6 @@ public class Camera2BasicFragment extends Fragment
     /**
      * Whether the current camera device supports Flash or not.
      */
-    private boolean mFlashSupported;
 
     /**
      * Orientation of the camera sensor
@@ -665,9 +662,7 @@ public class Camera2BasicFragment extends Fragment
                             mPreviewSize.getHeight(), mPreviewSize.getWidth());
                 }
 
-                // Check if the flash is supported.
-                Boolean available = characteristics.get(CameraCharacteristics.FLASH_INFO_AVAILABLE);
-                mFlashSupported = available == null ? false : available;
+
 
                 mCameraId = cameraId;
                 return;
@@ -1274,7 +1269,6 @@ public class Camera2BasicFragment extends Fragment
     public void AddISObuttons(){
         Context context= this.getActivity();
         int ISOLabel=ISORange.getLower();
-        Button btn1;
         LinearLayout ISOlayout = (LinearLayout)view.findViewById(R.id.linearlayoutiso);
         if (ISOLabel<=50)
             ISOLabel=50;
