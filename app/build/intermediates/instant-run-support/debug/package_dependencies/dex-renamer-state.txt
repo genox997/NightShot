@@ -1,4 +1,0 @@
-#Sun Mar 11 22:14:41 CET 2018
-base.0=/home/claudio/Android/Android Studio Project/NightShot/app/build/intermediates/transforms/dexMerger/debug/29
-path.0=classes.dex
-renamed.0=classes.dex
