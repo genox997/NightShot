@@ -475,20 +475,20 @@ public class Camera2BasicFragment extends Fragment
         ISO=100;
         Exposure=100000000L;
         ISOButton = (Button) view.findViewById(R.id.ISObutton);
-        ShutterButton = (Button) view.findViewById(R.id.Shutterbutton);
-        ShotsButton= (Button) view.findViewById(R.id.Shotsbutton);
-        FocusButton = (Button) view.findViewById(R.id.Focusbutton);
-        ValoriISO=(HorizontalScrollView) view.findViewById(R.id.ISO_Scroll);
+        ShutterButton = (Button) view.findViewById(com.cg.nightshot.R.id.Shutterbutton);
+        ShotsButton= (Button) view.findViewById(com.cg.nightshot.R.id.Shotsbutton);
+        FocusButton = (Button) view.findViewById(com.cg.nightshot.R.id.Focusbutton);
+        ValoriISO=(HorizontalScrollView) view.findViewById(com.cg.nightshot.R.id.ISO_Scroll);
         ValoriISO.setVisibility(view.INVISIBLE);
-        ValoriEsposizione=(HorizontalScrollView) view.findViewById(R.id.Exposure_Scroll);
+        ValoriEsposizione=(HorizontalScrollView) view.findViewById(com.cg.nightshot.R.id.Exposure_Scroll);
         ValoriEsposizione.setVisibility(view.INVISIBLE);
         ValoriShots=(HorizontalScrollView) view.findViewById(R.id.Shots_Scroll);
         ValoriShots.setVisibility(view.INVISIBLE);
-        Valorifocus=(LinearLayout) view.findViewById(R.id.linearlayoutfocus);
+        Valorifocus=(LinearLayout) view.findViewById(com.cg.nightshot.R.id.linearlayoutfocus);
         Valorifocus.setVisibility(view.INVISIBLE);
-        SeekBar FocusBar=(SeekBar)view.findViewById(R.id.focusbar);
+        SeekBar FocusBar=(SeekBar)view.findViewById(com.cg.nightshot.R.id.focusbar);
         FocusBar.setProgress(50);
-        Numberview=(TextView) view.findViewById(R.id.NumberView);
+        Numberview=(TextView) view.findViewById(com.cg.nightshot.R.id.NumberView);
         Numberview.setVisibility(View.INVISIBLE);
 
         ISOButton.setOnClickListener(this);
@@ -505,7 +505,7 @@ public class Camera2BasicFragment extends Fragment
     public void onViewCreated(final View view, Bundle savedInstanceState) {
         view.findViewById(picturebutton).setOnClickListener(this);
 
-                mTextureView = (AutoFitTextureView) view.findViewById(R.id.texture);
+                mTextureView = (AutoFitTextureView) view.findViewById(com.cg.nightshot.R.id.texture);
     }
 
     @Override
@@ -1269,7 +1269,7 @@ public class Camera2BasicFragment extends Fragment
     public void AddISObuttons(){
         Context context= this.getActivity();
         int ISOLabel=ISORange.getLower();
-        LinearLayout ISOlayout = (LinearLayout)view.findViewById(R.id.linearlayoutiso);
+        LinearLayout ISOlayout = (LinearLayout)view.findViewById(com.cg.nightshot.R.id.linearlayoutiso);
         if (ISOLabel<=50)
             ISOLabel=50;
         else if(ISOLabel<=100)
@@ -1329,8 +1329,8 @@ public class Camera2BasicFragment extends Fragment
            ExposureLabel=4000000L;
 
 
-        Button btn1;
-        LinearLayout ExposureLayout = (LinearLayout)view.findViewById(R.id.linearlayoutexposure);
+        //Button btn1;
+        LinearLayout ExposureLayout = (LinearLayout)view.findViewById(com.cg.nightshot.R.id.linearlayoutexposure);
         int counter=1;
         //Long costant=0.000000001;
         while(ExposureLabel<=ExposureRange.getUpper()) {
@@ -1474,7 +1474,7 @@ public class Camera2BasicFragment extends Fragment
     public void AddShotsbuttons(){
         Context context= this.getActivity();
         int ShotsLabel=5;
-        LinearLayout Shotslayout = (LinearLayout)view.findViewById(R.id.linearlayoutshots);
+        LinearLayout Shotslayout = (LinearLayout)view.findViewById(com.cg.nightshot.R.id.linearlayoutshots);
         int counter=1;
         while(ShotsLabel<=100) {
             LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(

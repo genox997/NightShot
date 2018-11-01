@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/home/claudio/Android/Android Studio Project/NightShot/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-hdpi-v4/values-hdpi-v4.xml",
+            "outputFile": "/home/claudio/StudioProjects/NightShot/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-hdpi-v4/values-hdpi-v4.xml",
             "map": [
                 {
                     "source": "/home/claudio/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.3.1.aar/fb0b90c9261b97a6cd10c801c1c5b4e0/res/values-hdpi-v4/values-hdpi-v4.xml",

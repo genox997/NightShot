@@ -1,12 +1,10 @@
 package com.cg.nightshot;
 import android.app.ActionBar;
-import android.app.DialogFragment;
-import android.graphics.Color;
+
 import android.media.ExifInterface;
 import android.os.Bundle;
 import android.Manifest;
 import android.app.NotificationManager;
-import android.content.ClipData;
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
@@ -14,7 +12,6 @@ import android.graphics.Bitmap;
 import android.media.MediaScannerConnection;
 import android.net.Uri;
 import android.os.AsyncTask;
-import android.os.Bundle;
 import android.os.Environment;
 import android.provider.MediaStore;
 import android.support.v4.app.ActivityCompat;
@@ -24,7 +21,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v4.app.NotificationCompat.Builder;
 import android.util.Log;
 import android.view.Menu;
-import android.view.MenuItem;
 import android.view.Window;
 import android.widget.Toast;
 import java.io.File;
@@ -46,36 +42,11 @@ import org.opencv.core.Mat;
 import org.opencv.core.MatOfPoint;
 
 
-import android.content.Context;
-import android.hardware.camera2.CameraCharacteristics;
-import android.hardware.camera2.CameraMetadata;
-import android.hardware.camera2.params.StreamConfigurationMap;
-import android.media.Image;
-import android.os.Environment;
-import android.os.Handler;
-import android.os.HandlerThread;
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
-import android.util.Log;
-import android.util.Size;
-import android.util.SparseIntArray;
-import android.view.Menu;
-import android.view.TextureView;
 import android.view.View;
-import android.widget.Button;
-import android.widget.Toast;
+
 
 import com.squareup.picasso.Picasso;
 
-import java.io.File;
-import java.io.FileOutputStream;
-import java.io.OutputStream;
-import java.nio.ByteBuffer;
-import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.Calendar;
-import java.util.List;
-import java.util.logging.LogRecord;
 
 
 
@@ -385,11 +356,7 @@ File dir = new File(Environment.getExternalStorageDirectory().getAbsolutePath() 
         View decorView = getWindow().getDecorView();
         int uiOptions = View.SYSTEM_UI_FLAG_FULLSCREEN;
         decorView.setSystemUiVisibility(uiOptions);
-        Log.i("OpenCV", "Trying to load OpenCV library");
-        if (!OpenCVLoader.initAsync(OpenCVLoader.OPENCV_VERSION_2_4_6, this, mLoaderCallback))
-        {
-            Log.e("OpenCV", "Cannot connect to OpenCV Manager");
-        }
+
     }
     public int deleteRecursive(File fileOrDirectory) {
 

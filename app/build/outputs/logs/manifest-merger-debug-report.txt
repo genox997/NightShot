@@ -1,10 +1,10 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/claudio/Android/Android Studio Project/NightShot/app/src/main/AndroidManifest.xml:2:1-44:12
-INJECTED from /home/claudio/Android/Android Studio Project/NightShot/app/src/main/AndroidManifest.xml:2:1-44:12
-INJECTED from /home/claudio/Android/Android Studio Project/NightShot/app/src/main/AndroidManifest.xml:2:1-44:12
-INJECTED from /home/claudio/Android/Android Studio Project/NightShot/app/src/main/AndroidManifest.xml:2:1-44:12
-MERGED from [:openCVLibrary320] /home/claudio/Android/Android Studio Project/NightShot/openCVLibrary320/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:2:1-11:12
+ADDED from /home/claudio/StudioProjects/NightShot/app/src/main/AndroidManifest.xml:2:1-44:12
+INJECTED from /home/claudio/StudioProjects/NightShot/app/src/main/AndroidManifest.xml:2:1-44:12
+INJECTED from /home/claudio/StudioProjects/NightShot/app/src/main/AndroidManifest.xml:2:1-44:12
+INJECTED from /home/claudio/StudioProjects/NightShot/app/src/main/AndroidManifest.xml:2:1-44:12
+MERGED from [:openCVLibrary320] /home/claudio/StudioProjects/NightShot/openCVLibrary320/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:2:1-11:12
 MERGED from [com.android.support:support-v13:25.3.1] /home/claudio/.gradle/caches/transforms-1/files-1.1/support-v13-25.3.1.aar/f376a6b69cae918a81fae90a84ce5c3f/AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:design:25.3.1] /home/claudio/.gradle/caches/transforms-1/files-1.1/design-25.3.1.aar/811daffe4e30fdf992e80f51b557899b/AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:appcompat-v7:25.3.1] /home/claudio/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.3.1.aar/fb0b90c9261b97a6cd10c801c1c5b4e0/AndroidManifest.xml:17:1-31:12
@@ -19,37 +19,37 @@ MERGED from [com.android.support:support-media-compat:25.3.1] /home/claudio/.gra
 MERGED from [com.android.support:support-core-utils:25.3.1] /home/claudio/.gradle/caches/transforms-1/files-1.1/support-core-utils-25.3.1.aar/bb8d8bdd71a675e47b0c715401dc6016/AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:support-core-ui:25.3.1] /home/claudio/.gradle/caches/transforms-1/files-1.1/support-core-ui-25.3.1.aar/71d2e6342fe4c87b56ee7f9dce47fda3/AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:support-compat:25.3.1] /home/claudio/.gradle/caches/transforms-1/files-1.1/support-compat-25.3.1.aar/9506beea2285963adb6dd956018b0bf8/AndroidManifest.xml:17:1-31:12
-INJECTED from /home/claudio/Android/Android Studio Project/NightShot/app/src/main/AndroidManifest.xml:2:1-44:12
-INJECTED from /home/claudio/Android/Android Studio Project/NightShot/app/src/main/AndroidManifest.xml:2:1-44:12
-INJECTED from /home/claudio/Android/Android Studio Project/NightShot/app/src/main/AndroidManifest.xml:2:1-44:12
+INJECTED from /home/claudio/StudioProjects/NightShot/app/src/main/AndroidManifest.xml:2:1-44:12
+INJECTED from /home/claudio/StudioProjects/NightShot/app/src/main/AndroidManifest.xml:2:1-44:12
+INJECTED from /home/claudio/StudioProjects/NightShot/app/src/main/AndroidManifest.xml:2:1-44:12
 	package
-		ADDED from /home/claudio/Android/Android Studio Project/NightShot/app/src/main/AndroidManifest.xml:3:5-31
-		INJECTED from /home/claudio/Android/Android Studio Project/NightShot/app/src/main/AndroidManifest.xml
-		INJECTED from /home/claudio/Android/Android Studio Project/NightShot/app/src/main/AndroidManifest.xml
+		ADDED from /home/claudio/StudioProjects/NightShot/app/src/main/AndroidManifest.xml:3:5-31
+		INJECTED from /home/claudio/StudioProjects/NightShot/app/src/main/AndroidManifest.xml
+		INJECTED from /home/claudio/StudioProjects/NightShot/app/src/main/AndroidManifest.xml
 	android:versionName
-		INJECTED from /home/claudio/Android/Android Studio Project/NightShot/app/src/main/AndroidManifest.xml
-		ADDED from /home/claudio/Android/Android Studio Project/NightShot/app/src/main/AndroidManifest.xml:2:1-44:12
-		INJECTED from /home/claudio/Android/Android Studio Project/NightShot/app/src/main/AndroidManifest.xml
+		INJECTED from /home/claudio/StudioProjects/NightShot/app/src/main/AndroidManifest.xml
+		ADDED from /home/claudio/StudioProjects/NightShot/app/src/main/AndroidManifest.xml:2:1-44:12
+		INJECTED from /home/claudio/StudioProjects/NightShot/app/src/main/AndroidManifest.xml
 	android:versionCode
-		INJECTED from /home/claudio/Android/Android Studio Project/NightShot/app/src/main/AndroidManifest.xml
-		ADDED from /home/claudio/Android/Android Studio Project/NightShot/app/src/main/AndroidManifest.xml:2:1-44:12
-		INJECTED from /home/claudio/Android/Android Studio Project/NightShot/app/src/main/AndroidManifest.xml
+		INJECTED from /home/claudio/StudioProjects/NightShot/app/src/main/AndroidManifest.xml
+		ADDED from /home/claudio/StudioProjects/NightShot/app/src/main/AndroidManifest.xml:2:1-44:12
+		INJECTED from /home/claudio/StudioProjects/NightShot/app/src/main/AndroidManifest.xml
 	xmlns:android
-		ADDED from /home/claudio/Android/Android Studio Project/NightShot/app/src/main/AndroidManifest.xml:2:11-69
+		ADDED from /home/claudio/StudioProjects/NightShot/app/src/main/AndroidManifest.xml:2:11-69
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from /home/claudio/Android/Android Studio Project/NightShot/app/src/main/AndroidManifest.xml:5:5-81
+ADDED from /home/claudio/StudioProjects/NightShot/app/src/main/AndroidManifest.xml:5:5-81
 	android:name
-		ADDED from /home/claudio/Android/Android Studio Project/NightShot/app/src/main/AndroidManifest.xml:5:22-78
+		ADDED from /home/claudio/StudioProjects/NightShot/app/src/main/AndroidManifest.xml:5:22-78
 uses-permission#android.permission.CAMERA
-ADDED from /home/claudio/Android/Android Studio Project/NightShot/app/src/main/AndroidManifest.xml:6:5-65
+ADDED from /home/claudio/StudioProjects/NightShot/app/src/main/AndroidManifest.xml:6:5-65
 	android:name
-		ADDED from /home/claudio/Android/Android Studio Project/NightShot/app/src/main/AndroidManifest.xml:6:22-62
+		ADDED from /home/claudio/StudioProjects/NightShot/app/src/main/AndroidManifest.xml:6:22-62
 uses-feature#android.hardware.camera2.full
-ADDED from /home/claudio/Android/Android Studio Project/NightShot/app/src/main/AndroidManifest.xml:7:5-66
+ADDED from /home/claudio/StudioProjects/NightShot/app/src/main/AndroidManifest.xml:7:5-66
 	android:name
-		ADDED from /home/claudio/Android/Android Studio Project/NightShot/app/src/main/AndroidManifest.xml:7:19-63
+		ADDED from /home/claudio/StudioProjects/NightShot/app/src/main/AndroidManifest.xml:7:19-63
 application
-ADDED from /home/claudio/Android/Android Studio Project/NightShot/app/src/main/AndroidManifest.xml:10:5-42:19
+ADDED from /home/claudio/StudioProjects/NightShot/app/src/main/AndroidManifest.xml:10:5-42:19
 MERGED from [com.android.support:support-v13:25.3.1] /home/claudio/.gradle/caches/transforms-1/files-1.1/support-v13-25.3.1.aar/f376a6b69cae918a81fae90a84ce5c3f/AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:support-v13:25.3.1] /home/claudio/.gradle/caches/transforms-1/files-1.1/support-v13-25.3.1.aar/f376a6b69cae918a81fae90a84ce5c3f/AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:design:25.3.1] /home/claudio/.gradle/caches/transforms-1/files-1.1/design-25.3.1.aar/811daffe4e30fdf992e80f51b557899b/AndroidManifest.xml:29:5-20
@@ -77,71 +77,71 @@ MERGED from [com.android.support:support-core-ui:25.3.1] /home/claudio/.gradle/c
 MERGED from [com.android.support:support-compat:25.3.1] /home/claudio/.gradle/caches/transforms-1/files-1.1/support-compat-25.3.1.aar/9506beea2285963adb6dd956018b0bf8/AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:support-compat:25.3.1] /home/claudio/.gradle/caches/transforms-1/files-1.1/support-compat-25.3.1.aar/9506beea2285963adb6dd956018b0bf8/AndroidManifest.xml:29:5-20
 	android:supportsRtl
-		ADDED from /home/claudio/Android/Android Studio Project/NightShot/app/src/main/AndroidManifest.xml:16:9-35
+		ADDED from /home/claudio/StudioProjects/NightShot/app/src/main/AndroidManifest.xml:16:9-35
 	android:label
-		ADDED from /home/claudio/Android/Android Studio Project/NightShot/app/src/main/AndroidManifest.xml:13:9-41
+		ADDED from /home/claudio/StudioProjects/NightShot/app/src/main/AndroidManifest.xml:13:9-41
 	android:roundIcon
-		ADDED from /home/claudio/Android/Android Studio Project/NightShot/app/src/main/AndroidManifest.xml:15:9-48
+		ADDED from /home/claudio/StudioProjects/NightShot/app/src/main/AndroidManifest.xml:15:9-48
 	android:largeHeap
-		ADDED from /home/claudio/Android/Android Studio Project/NightShot/app/src/main/AndroidManifest.xml:14:9-33
+		ADDED from /home/claudio/StudioProjects/NightShot/app/src/main/AndroidManifest.xml:14:9-33
 	android:icon
-		ADDED from /home/claudio/Android/Android Studio Project/NightShot/app/src/main/AndroidManifest.xml:12:9-43
+		ADDED from /home/claudio/StudioProjects/NightShot/app/src/main/AndroidManifest.xml:12:9-43
 	android:allowBackup
-		ADDED from /home/claudio/Android/Android Studio Project/NightShot/app/src/main/AndroidManifest.xml:11:9-35
+		ADDED from /home/claudio/StudioProjects/NightShot/app/src/main/AndroidManifest.xml:11:9-35
 	android:theme
-		ADDED from /home/claudio/Android/Android Studio Project/NightShot/app/src/main/AndroidManifest.xml:17:9-40
+		ADDED from /home/claudio/StudioProjects/NightShot/app/src/main/AndroidManifest.xml:17:9-40
 provider#android.support.v4.content.FileProvider
-ADDED from /home/claudio/Android/Android Studio Project/NightShot/app/src/main/AndroidManifest.xml:18:9-26:20
+ADDED from /home/claudio/StudioProjects/NightShot/app/src/main/AndroidManifest.xml:18:9-26:20
 	android:grantUriPermissions
-		ADDED from /home/claudio/Android/Android Studio Project/NightShot/app/src/main/AndroidManifest.xml:21:13-47
+		ADDED from /home/claudio/StudioProjects/NightShot/app/src/main/AndroidManifest.xml:21:13-47
 	android:authorities
-		ADDED from /home/claudio/Android/Android Studio Project/NightShot/app/src/main/AndroidManifest.xml:20:13-64
+		ADDED from /home/claudio/StudioProjects/NightShot/app/src/main/AndroidManifest.xml:20:13-64
 	android:exported
-		ADDED from /home/claudio/Android/Android Studio Project/NightShot/app/src/main/AndroidManifest.xml:22:13-37
+		ADDED from /home/claudio/StudioProjects/NightShot/app/src/main/AndroidManifest.xml:22:13-37
 	android:name
-		ADDED from /home/claudio/Android/Android Studio Project/NightShot/app/src/main/AndroidManifest.xml:19:13-67
+		ADDED from /home/claudio/StudioProjects/NightShot/app/src/main/AndroidManifest.xml:19:13-67
 meta-data#android.support.FILE_PROVIDER_PATHS
-ADDED from /home/claudio/Android/Android Studio Project/NightShot/app/src/main/AndroidManifest.xml:23:13-25:53
+ADDED from /home/claudio/StudioProjects/NightShot/app/src/main/AndroidManifest.xml:23:13-25:53
 	android:resource
-		ADDED from /home/claudio/Android/Android Studio Project/NightShot/app/src/main/AndroidManifest.xml:25:17-50
+		ADDED from /home/claudio/StudioProjects/NightShot/app/src/main/AndroidManifest.xml:25:17-50
 	android:name
-		ADDED from /home/claudio/Android/Android Studio Project/NightShot/app/src/main/AndroidManifest.xml:24:17-67
+		ADDED from /home/claudio/StudioProjects/NightShot/app/src/main/AndroidManifest.xml:24:17-67
 activity#com.cg.nightshot.MainActivity
-ADDED from /home/claudio/Android/Android Studio Project/NightShot/app/src/main/AndroidManifest.xml:27:9-37:20
+ADDED from /home/claudio/StudioProjects/NightShot/app/src/main/AndroidManifest.xml:27:9-37:20
 	android:label
-		ADDED from /home/claudio/Android/Android Studio Project/NightShot/app/src/main/AndroidManifest.xml:29:13-45
+		ADDED from /home/claudio/StudioProjects/NightShot/app/src/main/AndroidManifest.xml:29:13-45
 	android:theme
-		ADDED from /home/claudio/Android/Android Studio Project/NightShot/app/src/main/AndroidManifest.xml:30:13-56
+		ADDED from /home/claudio/StudioProjects/NightShot/app/src/main/AndroidManifest.xml:30:13-56
 	android:name
-		ADDED from /home/claudio/Android/Android Studio Project/NightShot/app/src/main/AndroidManifest.xml:28:13-41
+		ADDED from /home/claudio/StudioProjects/NightShot/app/src/main/AndroidManifest.xml:28:13-41
 intent-filter#action:name:android.intent.action.MAIN+action:name:com.cg.nightshot.MainActivity+category:name:android.intent.category.LAUNCHER
-ADDED from /home/claudio/Android/Android Studio Project/NightShot/app/src/main/AndroidManifest.xml:31:13-36:29
+ADDED from /home/claudio/StudioProjects/NightShot/app/src/main/AndroidManifest.xml:31:13-36:29
 action#android.intent.action.MAIN
-ADDED from /home/claudio/Android/Android Studio Project/NightShot/app/src/main/AndroidManifest.xml:32:17-69
+ADDED from /home/claudio/StudioProjects/NightShot/app/src/main/AndroidManifest.xml:32:17-69
 	android:name
-		ADDED from /home/claudio/Android/Android Studio Project/NightShot/app/src/main/AndroidManifest.xml:32:25-66
+		ADDED from /home/claudio/StudioProjects/NightShot/app/src/main/AndroidManifest.xml:32:25-66
 action#com.cg.nightshot.MainActivity
-ADDED from /home/claudio/Android/Android Studio Project/NightShot/app/src/main/AndroidManifest.xml:33:17-72
+ADDED from /home/claudio/StudioProjects/NightShot/app/src/main/AndroidManifest.xml:33:17-72
 	android:name
-		ADDED from /home/claudio/Android/Android Studio Project/NightShot/app/src/main/AndroidManifest.xml:33:25-69
+		ADDED from /home/claudio/StudioProjects/NightShot/app/src/main/AndroidManifest.xml:33:25-69
 category#android.intent.category.LAUNCHER
-ADDED from /home/claudio/Android/Android Studio Project/NightShot/app/src/main/AndroidManifest.xml:35:17-77
+ADDED from /home/claudio/StudioProjects/NightShot/app/src/main/AndroidManifest.xml:35:17-77
 	android:name
-		ADDED from /home/claudio/Android/Android Studio Project/NightShot/app/src/main/AndroidManifest.xml:35:27-74
+		ADDED from /home/claudio/StudioProjects/NightShot/app/src/main/AndroidManifest.xml:35:27-74
 activity#com.cg.nightshot.Risultato
-ADDED from /home/claudio/Android/Android Studio Project/NightShot/app/src/main/AndroidManifest.xml:38:9-41:59
+ADDED from /home/claudio/StudioProjects/NightShot/app/src/main/AndroidManifest.xml:38:9-41:59
 	android:label
-		ADDED from /home/claudio/Android/Android Studio Project/NightShot/app/src/main/AndroidManifest.xml:40:13-61
+		ADDED from /home/claudio/StudioProjects/NightShot/app/src/main/AndroidManifest.xml:40:13-61
 	android:theme
-		ADDED from /home/claudio/Android/Android Studio Project/NightShot/app/src/main/AndroidManifest.xml:41:13-56
+		ADDED from /home/claudio/StudioProjects/NightShot/app/src/main/AndroidManifest.xml:41:13-56
 	android:name
-		ADDED from /home/claudio/Android/Android Studio Project/NightShot/app/src/main/AndroidManifest.xml:39:13-38
+		ADDED from /home/claudio/StudioProjects/NightShot/app/src/main/AndroidManifest.xml:39:13-38
 uses-sdk
-INJECTED from /home/claudio/Android/Android Studio Project/NightShot/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from /home/claudio/Android/Android Studio Project/NightShot/app/src/main/AndroidManifest.xml
-INJECTED from /home/claudio/Android/Android Studio Project/NightShot/app/src/main/AndroidManifest.xml
-MERGED from [:openCVLibrary320] /home/claudio/Android/Android Studio Project/NightShot/openCVLibrary320/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:7:5-9:41
-MERGED from [:openCVLibrary320] /home/claudio/Android/Android Studio Project/NightShot/openCVLibrary320/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:7:5-9:41
+INJECTED from /home/claudio/StudioProjects/NightShot/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /home/claudio/StudioProjects/NightShot/app/src/main/AndroidManifest.xml
+INJECTED from /home/claudio/StudioProjects/NightShot/app/src/main/AndroidManifest.xml
+MERGED from [:openCVLibrary320] /home/claudio/StudioProjects/NightShot/openCVLibrary320/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:7:5-9:41
+MERGED from [:openCVLibrary320] /home/claudio/StudioProjects/NightShot/openCVLibrary320/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:7:5-9:41
 MERGED from [com.android.support:support-v13:25.3.1] /home/claudio/.gradle/caches/transforms-1/files-1.1/support-v13-25.3.1.aar/f376a6b69cae918a81fae90a84ce5c3f/AndroidManifest.xml:21:5-23:55
 MERGED from [com.android.support:support-v13:25.3.1] /home/claudio/.gradle/caches/transforms-1/files-1.1/support-v13-25.3.1.aar/f376a6b69cae918a81fae90a84ce5c3f/AndroidManifest.xml:21:5-23:55
 MERGED from [com.android.support:design:25.3.1] /home/claudio/.gradle/caches/transforms-1/files-1.1/design-25.3.1.aar/811daffe4e30fdf992e80f51b557899b/AndroidManifest.xml:21:5-23:62
@@ -170,18 +170,18 @@ MERGED from [com.android.support:support-core-ui:25.3.1] /home/claudio/.gradle/c
 MERGED from [com.android.support:support-core-ui:25.3.1] /home/claudio/.gradle/caches/transforms-1/files-1.1/support-core-ui-25.3.1.aar/71d2e6342fe4c87b56ee7f9dce47fda3/AndroidManifest.xml:21:5-23:58
 MERGED from [com.android.support:support-compat:25.3.1] /home/claudio/.gradle/caches/transforms-1/files-1.1/support-compat-25.3.1.aar/9506beea2285963adb6dd956018b0bf8/AndroidManifest.xml:21:5-23:58
 MERGED from [com.android.support:support-compat:25.3.1] /home/claudio/.gradle/caches/transforms-1/files-1.1/support-compat-25.3.1.aar/9506beea2285963adb6dd956018b0bf8/AndroidManifest.xml:21:5-23:58
-INJECTED from /home/claudio/Android/Android Studio Project/NightShot/app/src/main/AndroidManifest.xml
-INJECTED from /home/claudio/Android/Android Studio Project/NightShot/app/src/main/AndroidManifest.xml
+INJECTED from /home/claudio/StudioProjects/NightShot/app/src/main/AndroidManifest.xml
+INJECTED from /home/claudio/StudioProjects/NightShot/app/src/main/AndroidManifest.xml
 	tools:overrideLibrary
 		ADDED from [com.android.support:support-v13:25.3.1] /home/claudio/.gradle/caches/transforms-1/files-1.1/support-v13-25.3.1.aar/f376a6b69cae918a81fae90a84ce5c3f/AndroidManifest.xml:23:9-52
 	android:targetSdkVersion
-		INJECTED from /home/claudio/Android/Android Studio Project/NightShot/app/src/main/AndroidManifest.xml
-		ADDED from /home/claudio/Android/Android Studio Project/NightShot/app/src/main/AndroidManifest.xml
-		INJECTED from /home/claudio/Android/Android Studio Project/NightShot/app/src/main/AndroidManifest.xml
+		INJECTED from /home/claudio/StudioProjects/NightShot/app/src/main/AndroidManifest.xml
+		ADDED from /home/claudio/StudioProjects/NightShot/app/src/main/AndroidManifest.xml
+		INJECTED from /home/claudio/StudioProjects/NightShot/app/src/main/AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from /home/claudio/Android/Android Studio Project/NightShot/app/src/main/AndroidManifest.xml
-		ADDED from /home/claudio/Android/Android Studio Project/NightShot/app/src/main/AndroidManifest.xml
-		INJECTED from /home/claudio/Android/Android Studio Project/NightShot/app/src/main/AndroidManifest.xml
+		INJECTED from /home/claudio/StudioProjects/NightShot/app/src/main/AndroidManifest.xml
+		ADDED from /home/claudio/StudioProjects/NightShot/app/src/main/AndroidManifest.xml
+		INJECTED from /home/claudio/StudioProjects/NightShot/app/src/main/AndroidManifest.xml
 meta-data#android.support.VERSION
 ADDED from [com.android.support:support-v13:25.3.1] /home/claudio/.gradle/caches/transforms-1/files-1.1/support-v13-25.3.1.aar/f376a6b69cae918a81fae90a84ce5c3f/AndroidManifest.xml:25:5-27:34
 MERGED from [com.android.support:design:25.3.1] /home/claudio/.gradle/caches/transforms-1/files-1.1/design-25.3.1.aar/811daffe4e30fdf992e80f51b557899b/AndroidManifest.xml:25:5-27:34

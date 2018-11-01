@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/home/claudio/Android/Android Studio Project/NightShot/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sw600dp-v13/values-sw600dp-v13.xml",
+            "outputFile": "/home/claudio/StudioProjects/NightShot/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sw600dp-v13/values-sw600dp-v13.xml",
             "map": [
                 {
                     "source": "/home/claudio/.gradle/caches/transforms-1/files-1.1/design-25.3.1.aar/811daffe4e30fdf992e80f51b557899b/res/values-sw600dp-v13/values-sw600dp-v13.xml",
